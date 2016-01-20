@@ -1,5 +1,6 @@
 #FROM node:latest
 FROM selenium/node-chrome
+USER root
 RUN sudo mkdir /tmp/app
 RUN sudo apt-get update
 RUN sudo apt-get install -y curl
