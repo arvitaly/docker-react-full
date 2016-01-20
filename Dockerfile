@@ -21,4 +21,4 @@ RUN cd /tmp/app && npm install redux-thunk
 RUN mkdir /tmp/e2e
 RUN cd /tmp/e2e && npm install jasmine-http-mock
 RUN cd /tmp/e2e && npm install selenium-webdriver
-RUN cd /tmp/e2e && npm install serve-static
+RUN npm install jasmine -g
