@@ -12,3 +12,4 @@ RUN cd /tmp/app && npm install babel-jest
 RUN cd /tmp/app && npm install babel-preset-es2015-node5 
 RUN cd /tmp/app && npm install jest-cli 
 RUN cd /tmp/app && npm install react-addons-test-utils
+RUN cd /tmp/app && ls
