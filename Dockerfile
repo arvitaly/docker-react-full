@@ -18,3 +18,7 @@ RUN cd /tmp/app && npm install react-redux
 RUN cd /tmp/app && npm install redux
 RUN cd /tmp/app && npm install redux-logger
 RUN cd /tmp/app && npm install redux-thunk
+RUN mkdir /tmp/e2e
+RUN cd /tmp/e2e && npm install jasmine-http-mock
+RUN cd /tmp/e2e && npm install selenium-webdriver
+RUN cd /tmp/e2e && npm install serve-static
