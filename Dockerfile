@@ -1,4 +1,5 @@
-FROM node:latest
+#FROM node:latest
+FROM selenium/node-chrome
 RUN mkdir /tmp/app
 RUN cd /tmp/app && npm install react 
 RUN cd /tmp/app && npm install react-dom
