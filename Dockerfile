@@ -1,7 +1,7 @@
 #FROM node:latest
 FROM selenium/node-chrome
-RUN mkdir /tmp/app
-RUN apt-get install -y curl
+RUN sudo mkdir /tmp/app
+RUN sudo apt-get install -y curl
 RUN sudo curl -sL https://deb.nodesource.com/setup_5.x | bash -
 RUN sudo apt-get install -y nodejs
 RUN cd /tmp/app && npm install react 
