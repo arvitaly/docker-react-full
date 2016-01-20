@@ -1,8 +1,9 @@
 #FROM node:latest
 FROM selenium/node-chrome
 RUN mkdir /tmp/app
-RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
-RUN apt-get install -y nodejs
+RUN apt-get install -y curl
+RUN sudo curl -sL https://deb.nodesource.com/setup_5.x | bash -
+RUN sudo apt-get install -y nodejs
 RUN cd /tmp/app && npm install react 
 RUN cd /tmp/app && npm install react-dom
 RUN cd /tmp/app && npm install babel-preset-es2015
