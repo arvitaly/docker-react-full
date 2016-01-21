@@ -28,3 +28,6 @@ RUN mkdir /tmp/e2e
 RUN cd /tmp/e2e && sudo npm install jasmine-http-mock
 RUN cd /tmp/e2e && sudo npm install selenium-webdriver
 RUN sudo npm install jasmine -g
+RUN sudo add-apt-repository ppa:fkrull/deadsnakes-python2.7
+RUN sudo apt-get update 
+RUN sudo apt-get install python2.7
