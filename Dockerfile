@@ -30,3 +30,4 @@ RUN cd /tmp/e2e && sudo npm install selenium-webdriver
 RUN sudo npm install jasmine -g
 RUN sudo apt-get install python -y
 RUN sudo apt-get install build-essential -y
+RUN sudo npm install browserify -g
